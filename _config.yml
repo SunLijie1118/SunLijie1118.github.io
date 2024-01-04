@@ -3,11 +3,11 @@ title: My Blog
 SEOTitle: 我的博客 | My Blog
 header-img: img/post-bg-desk.jpg
 email: 暂无
-description: "写一句你想写的话"
+description: "嗨，我是孙丽杰，一名前端开发者。"
 keyword: "我的博客"
-url: "http://name.github.io"          # your host, for absolute URL
+url: "http://SunLijie1118.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/name/name.github.io.git" # you code repository
+github_repo: "https://github.com/SunLijie1118/SunLijie1118.github.io" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
