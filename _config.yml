@@ -6,7 +6,7 @@ email: 暂无
 description: "嗨，我是sun，一名前端开发者。"
 keyword: "我的博客"
 url: "http://SunLijie1118.github.io"          # your host, for absolute URL
-baseurl: "http://SunLijie1118.github.io"      # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/SunLijie1118/SunLijie1118.github.io" # you code repository
 
 # Sidebar settings
