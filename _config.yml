@@ -1,56 +1,44 @@
 # Site settings
-title: SUN的博客
-SEOTitle: SUN的博客
-header-img: img/post-bg-coffee.jpeg
-email: 暂无
-description: "嗨，我是sun，一名前端开发者。"
-keyword: "我的博客"
-url: "http://SunLijie1118.github.io"          # your host, for absolute URL
-baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/SunLijie1118/SunLijie1118.github.io" # you code repository
+title: sunlijie
+description: '主要是记录个人对技术的理解和开发过程中遇到的问题，欢迎了解更多。'
+url: 'https://sunlijie1118.github.io/'
+baseurl: ''
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+# disable_landing_page: true
 
-# Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "热爱技术，热爱生活"
-sidebar-avatar: /img/avatar_binggan.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+author:
+  name: 'sunlijie'
+  email: 
+  twitter_username: 
+  facebook_username: 
+  github_username: 'SunLijie1118'
+  linkedin_username:  
 
-
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
 
 # Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-permalink: pretty
+destination: _site
 paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
-
-
-
-# Gems
-# from PR#40, to support local preview for Jekyll 3.0
-gems: [jekyll-paginate]
-
-
-
-
-# Markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-# document: http://jekyllrb.com/docs/configuration/#kramdown
+permalink: /:year/:title/
 markdown: kramdown
 highlighter: rouge
-#redcarpet:
-#    extensions: [ "hard_wrap","autolink", "tables", "strikethrough", "superscript", "with_toc_data", "highlight", "prettify","no_intra_emphasis"]
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
 kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
 
-
-
-# Featured Tags
-featured-tags: true                     # 是否使用首页标签
-featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
-
-
-
-# Progressive Web Apps
-chrome-tab-theme-color: "#000000"
-service-worker: true
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
